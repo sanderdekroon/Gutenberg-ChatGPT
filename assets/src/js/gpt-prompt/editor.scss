@@ -1,0 +1,28 @@
+/**
+ * CSS for backend only
+ */
+
+.sdk-chatgptprompt {
+	&.loading {
+		background: #ededed;
+		cursor: wait;
+		color: #515151;
+	}
+
+	.prompt-text, .response-text {
+		&:before {
+			font-style: italic;
+			color: #666; // 😈
+		}
+	}
+
+	.prompt-text {
+		margin-bottom: 0;
+		&:before { content: 'Prompt: '; }
+	}
+
+	.response-text {
+		margin-top: 0;
+		&:before { content: 'Status: '; }
+	}
+}

@@ -1,0 +1,57 @@
+{
+  "name": "gutenberg-chatgpt",
+  "version": "1.0.0",
+  "description": "Integrate ChatGPT into Gutenberg",
+  "author": "Sander de Kroon",
+  "scripts": {
+    "build": "cross-env ENV=development WATCH=false webpack --config assets/webpack.config.js",
+    "build:prod": "cross-env ENV=production WATCH=false webpack --config assets/webpack.config.js",
+    "watch": "cross-env ENV=development WATCH=true webpack --config assets/webpack.config.js"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-transform-react-jsx"
+    ],
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@wordpress/scripts": "12.6.1",
+    "are-you-es5": "^2.1.2",
+    "autoprefixer": "^10.4.1",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^8.2.3",
+    "browser-sync": "^2.12.8",
+    "core-js": "^3.20.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "del": "^3.0.0",
+    "es6-promise": "^3.2.1",
+    "eslint-config-wordpress": "^2.0.0",
+    "eslint-plugin": "^1.0.1",
+    "eslint-plugin-jest": "^21.6.1",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-wordpress": "^0.1.0",
+    "jshint": "^2.9.2",
+    "mini-css-extract-plugin": "^2.4.5",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.2.0",
+    "sass": "^1.54.4",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "wordpress": {
+    "tested": "6.1",
+    "required": "5.5"
+  }
+}

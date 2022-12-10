@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: php-actions/composer@v6
+        with:
+          php_version: "7.4"
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm install
+      - run: ./package.sh
+      - name: Release
+        uses: fnkr/github-action-ghr@v1
+        env:
+          GHR_COMPRESS: zip
+          GHR_PATH: releases/
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
