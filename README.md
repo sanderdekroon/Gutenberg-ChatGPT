@@ -9,10 +9,21 @@ Tired of writing your own blog posts? Don't have any inspiration? No more! Use C
 
 ## 🔧 Installation
 0. Signup for OpenAI [here](https://beta.openai.com/signup) and request your API key
-1. Download and install this plugin
+1. Download the latest release from [the releases page](https://github.com/sanderdekroon/Gutenberg-ChatGPT/releases) and install this plugin
 2. Activate the plugin
-3. Set the API key through `functions.php`:
+3. Set your API key by adding a line of code (for example in your `functions.php`):
 
 ```php
 gutenbergGPTContainer()->set('openai.api_key', 'your_api_key_here');
 ```
+
+## 🧑‍💻 Development
+Want to contribute? Go ahead and create a pull request to submit your changes. To get setup, you will need to download [Composer](https://getcomposer.org/) and [NPM](https://www.npmjs.com/).
+
+1. Clone this repository to your machine and/or WordPress installation
+2. Use Composer (`composer install`) and NPM (`npm i`) to install the required dependencies
+3. Run `npm run watch` to automatically rebuild assest whenever a file changes or run `npm run build` for a one-off build. 
+
+To create an optimized and zipped build, run the `package.sh` script. This also requires Composer and NPM to run.
+
+
