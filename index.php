@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Gutenberg - ChatGPT integration
  * Description: Use ChatGPT to write your next blog post. Adds a 'ChatGPT' block to the Gutenberg editor
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: sanderdekroon
  * Author URI: https://sanderdekroon.xyz
  * Requires at least: 6.0

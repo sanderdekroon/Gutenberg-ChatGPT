@@ -10,7 +10,7 @@ use Tectalic\OpenAi\Handlers\Completions as GPTCompletions;
 return [
     'plugin.name'       => 'Gutenberg - ChatGPT integration',
     'plugin.slug'       => 'sdk-gutenberggpt',
-    'plugin.version'    => '1.0.0',
+    'plugin.version'    => '1.0.1',
     'plugin.path'       => dirname(__DIR__),
     'plugin.url'        => plugins_url(basename(dirname(__DIR__))),
     'openai.api_key'    => '',
