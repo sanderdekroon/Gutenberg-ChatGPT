@@ -2,6 +2,9 @@
 
 Tired of writing your own blog posts? Don't have any inspiration? No more! Use ChatGPT to write your next post. Simply type in your prompt and let the magic of ✨AI✨ do the work for you!
 
+## No longer maintained
+This was a for fun project and is no longer actively maintained.
+
 ## 📋 TL;DR
 > - A small plugin that adds a 'ChatGPT' block to the Gutenberg editor
 > - Type in your prompt and it will put the output of ChatGPT in a paragraph for you
